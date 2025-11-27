@@ -4,32 +4,92 @@
 }
 
 body{
-    background-color: #dae8ee;
+    background-color: #ceebf7;
 }
-.container{
-    background-color: #eaeeda;
-    display: flex;
+.container {
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    grid-template-columns: 3fr 1fr;
+    gap: 2vw;
+    padding-inline: 10vw ;
+    padding-top: 17vh;
     
 }
+
 .right-card{
-    background-color: #e3b5a4;
-    padding: 10px ;
+    background-color: #ffffff;
+    
     display: flex;
     flex-direction: column;
     gap: 3vh;
+    
 }
 .right-card img {
     border-radius: 50%;
 }
-.title{
+p {
+    color: gray;
+}
+.title-item {
+    flex-direction: column;
+}
+
+
+// left card 
+.top-right-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+// testimonial 
+.title-testimonial-1 , .title-testimonial-2 , .second-left-card  , .title-testimonial-3{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 3vw;
 }
-.title-item{
-    flex-direction: column;
+.testimonial-1{
+    padding: 30px;
+    background-color: #733fc8;
+    border-radius: 2%;
+}
+.testimonial-1 img  , .title-testimonial-3  img {
+    border-radius: 50%;
+}
+h1 
+{
+    color: white;
+}
+.testimonial-1 {
+    color: #d5d3d3;
+}
+.testimonial-2 {
+    background-color:#49556b ;
+    padding: 30px;
+    border-radius: 3%;
+}
+.testimonial-3 {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 3%;
+}
+
+.testimonial-4{
+    background-color:#18202d;
+    border-radius: 3%;
+}
+.title-testimonial-4{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+}
+.title-testimonial-4 img {
+        border-radius: 50%;
+}
+.testimonial-3  h1 , 
+.testimonial-right h1{
+    color: black;
 }
 
 @media ( max-width:440px) {
@@ -41,4 +101,11 @@ body{
         gap: 2vh;
         margin: 2vh;
     }
+// testimonial 
+.title-testimonial-1 , .title-testimonial-2 , .second-left-card{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
 }
