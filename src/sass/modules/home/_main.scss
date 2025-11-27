@@ -2,10 +2,21 @@
     margin: 0;
     padding: 0;
 }
-
+//  text in middle of the page 
+.texte{
+    color: #733fc8;
+    text-align: center;
+    padding-top: 3vh;
+    font-weight: 700;
+    text-decoration:  underline  ;
+    text-shadow: 5px 5px 10px  #7a49c8;
+    transform: skew(2deg,5deg);
+    // text-decoration-style: dashed;
+}
 body{
     background-color: #ceebf7;
 }
+//  the container 
 .container {
     display: grid;
     align-items: center;
@@ -13,15 +24,18 @@ body{
     gap: 2vw;
     padding-inline: 10vw ;
     padding-top: 17vh;
-    
+
 }
 
+//  the right card : kira whittle
 .right-card{
     background-color: #ffffff;
-    
     display: flex;
     flex-direction: column;
     gap: 3vh;
+    padding: 3vh;
+    box-shadow: 1px 1px 20px 0px #98959a;
+    
     
 }
 .right-card img {
@@ -30,8 +44,11 @@ body{
 p {
     color: gray;
 }
-.title-item {
-    flex-direction: column;
+// flex the item in 
+.title {
+    // background-color: #356373;
+    display: flex;
+    gap: 2vh;
 }
 
 
@@ -42,7 +59,7 @@ p {
     align-items: center;
     gap: 20px;
 }
-// testimonial 
+// testimonials style 
 .title-testimonial-1 , .title-testimonial-2 , .second-left-card  , .title-testimonial-3{
     display: flex;
     align-items: center;
@@ -52,7 +69,10 @@ p {
     padding: 30px;
     background-color: #733fc8;
     border-radius: 2%;
+    position: relative;
+    box-shadow: 1px 1px 20px 0px #8f32c9;
 }
+// ^ border images 
 .testimonial-1 img  , .title-testimonial-3  img {
     border-radius: 50%;
 }
@@ -63,28 +83,46 @@ h1
 .testimonial-1 {
     color: #d5d3d3;
 }
+// & the icon in the first card 
+.icon{
+    width: 2vw;
+    height: 2vh;
+    position: absolute;
+    top: 0;
+    left: 30vw;
+
+}
 .testimonial-2 {
     background-color:#49556b ;
     padding: 30px;
     border-radius: 3%;
+    box-shadow: 1px 1px 20px 0px #6c6a6d;
 }
 .testimonial-3 {
     background-color: #ffffff;
-    padding: 30px;
     border-radius: 3%;
+    padding: 2vw;
+    margin: 1vh;
+    box-shadow: 1px 1px 20px 0px #98959a;
 }
 
 .testimonial-4{
     background-color:#18202d;
     border-radius: 3%;
+    padding: 3vh;
+    box-shadow: 1px 1px 20px 0px #994ecb;
 }
 .title-testimonial-4{
     display: flex;
     align-items: center;
-    gap: 2vw;
+    gap: 2vh;
 
 }
-.title-testimonial-4 img {
+.testimonial-4 img {
+    border-radius: 50% ;
+    border:  3px solid  #a42bef; 
+}
+.title-testimonial-2 img   {
         border-radius: 50%;
 }
 .testimonial-3  h1 , 
@@ -101,11 +139,34 @@ h1
         gap: 2vh;
         margin: 2vh;
     }
+    .icon{
+        display: none;
+    }
+
 // testimonial 
-.title-testimonial-1 , .title-testimonial-2 , .second-left-card{
+.second-left-card{
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 3vw;
-}
 
+}
+.testimonial-4{
+    background-color:#0c1017;
+    border-radius: 3%;
+}
+.title-testimonial-4{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+}
+.top-right-card{
+    display: flex;
+    flex-direction: column;
+
+}
+.testimonial-3{
+    margin-top: 1vh;
+}
 }
