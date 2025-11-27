@@ -1,3 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: #dae8ee;
+}
+
+.container {
+  background-color: #eaeeda;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right-card {
+  background-color: #e3b5a4;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.right-card img {
+  border-radius: 50%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-item {
+  flex-direction: column;
+}
 
 /*# sourceMappingURL=app.css.map */
